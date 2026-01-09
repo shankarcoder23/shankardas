@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shankar Das | Web Designer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="Assets/CSS/style.css">
+
+  <style>
+    .project-card {
+  background: #0f172a;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card img {
+  height: 260px;
+  object-fit: cover;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(56,189,248,0.25);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+     style="background: linear-gradient(135deg,#0d1117,#274d6c); color:#e5e7eb;">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold text-white" href="index.html">
+      Shankar Das
+    </a>
+
+    <button class="navbar-toggler border-0" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ms-auto gap-3">
+
+  
+
+  <li class="nav-item">
+    <a class="nav-link text-white" href="#about">
+      About
+    </a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link text-white" href="#skills">
+      My Skills
+    </a>
+  </li>
+
+  <li class="nav-item">
+  <a class="nav-link text-white" href="#projects">
+    Projects
+  </a>
+</li>
+
+
+  <li class="nav-item">
+    <a class="nav-link text-white" href="resume.html">
+      Resume
+    </a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link text-white" href="#contact">
+      Contact
+    </a>
+  </li>
+
+</ul>
+
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+
+      <!-- TEXT -->
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold">
+  Hello, I'm <span class="typing"></span>
+</h1>
+
+
+        <h4 class="text-primary mt-3">
+          Creative Web Designer
+        </h4>
+
+        <p class="mt-4">
+          I design and develop modern, responsive websites using
+          HTML, CSS, Bootstrap, and JavaScript. Passionate about
+          clean UI and user-friendly experiences.
+        </p>
+
+        <div class="mt-4 d-flex gap-3 flex-wrap">
+          <a href="#projects" class="btn btn-main text-white">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="col-lg-6 position-relative text-center">
+        <img src="Assets/image/profile/profile-pic (2).png" class="img-fluid profile-img" width="420">
+
+        <!-- Floating badges -->
+        <div class="badge-box" style="top:15%; left:10%;">
+          <i class="bi bi-code-slash"></i> Code
+        </div>
+
+        <div class="badge-box" style="bottom:20%; right:10%;">
+          <i class="bi bi-lightbulb"></i> Ideas
+        </div>
+
+        <div class="badge-box" style="top:40%; right:5%;">
+          <i class="bi bi-palette"></i> Design
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!--About-->
+<section id="about" class="py-5" style="background:#0f172a;">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3">About Me</h2>
+        <p class="text-secondary">
+          I'm <strong>Shankar Das</strong>, a creative web designer with hands-on
+          experience in building responsive, modern websites.
+          I focus on clean UI, usability, and performance.
+        </p>
+
+        <p class="text-secondary">
+          I have completed my education from Guwahati College and
+          Narengi Anchalik Mahavidyalaya and hold certifications in
+          DCA and Web Designing.
+        </p>
+      </div>
+
+      <div class="col-lg-6 text-center">
+        <img src="Assets/image/profile/webdesign-sha.png" class="img-fluid rounded-4 shadow" width="350">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!--My Skill-->
+<section id="skills" class="py-5 skill-section">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">My Skills</h2>
+
+    <div class="row g-4 text-center">
+
+      <!-- HTML -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card p-4 bg-dark rounded-4 shadow h-100">
+         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="48">
+
+          <h6 class="mt-3 text-white">HTML5</h6>
+        </div>
+      </div>
+
+      <!-- CSS -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card p-4 bg-dark rounded-4 shadow h-100">
+         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="48">
+
+          <h6 class="mt-3 text-white">CSS3</h6>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card p-4 bg-dark rounded-4 shadow h-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="48">
+
+          <h6 class="mt-3 text-white">JavaScript</h6>
+        </div>
+      </div>
+
+      <!-- React -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card p-4 bg-dark rounded-4 shadow h-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React JS" width="48">
+
+          <h6 class="mt-3 text-white">React JS</h6>
+        </div>
+      </div>
+
+      <!-- Bootstrap -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card p-4 bg-dark rounded-4 shadow h-100">
+         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap 5" width="48">
+
+          <h6 class="mt-3 text-white">Bootstrap 5</h6>
+        </div>
+      </div>
+
+      <!-- MS Office -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card p-4 bg-dark rounded-4 shadow h-100">
+          <img src="https://img.icons8.com/color/48/microsoft-office-2019.png" alt="MS Office">
+          <h6 class="mt-3 text-white">MS Office</h6>
+        </div>
+      </div>
+
+      <!-- Canva -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card p-4 bg-dark rounded-4 shadow h-100">
+          <img src="https://img.icons8.com/color/48/canva.png" alt="Canva">
+          <h6 class="mt-3 text-white">Canva</h6>
+        </div>
+      </div>
+
+      <!-- ChatGPT -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card p-4 bg-dark rounded-4 shadow h-100">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/chatgpt.png" alt="ChatGPT">
+          <h6 class="mt-3 text-white">ChatGPT / AI Tools</h6>
+        </div>
+      </div>
+
+      <!-- Figma -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card p-4 bg-dark rounded-4 shadow h-100">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+          alt="Figma"
+          width="48">
+
+        <h6 class="mt-3 text-white">Figma</h6>
+        </div>
+      </div>
+
+     <!-- Git -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card p-4 bg-dark rounded-4 shadow h-100">
+         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+     alt="Git"
+     width="48">
+
+          <h6 class="mt-3 text-white">Git</h6>
+        </div>
+      </div> 
+      
+       <!-- GitHub -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card p-4 bg-dark rounded-4 shadow h-100">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              width="48"
+              style="filter: invert(1);">
+            <h6 class="mt-3 text-white">GitHub</h6>
+        </div>
+      </div>
+
+       <!-- Google Ai Studio -->
+      <div class="col-6 col-md-3">
+        <div class="skill-card p-4 bg-dark rounded-4 shadow h-100">
+         <img src="Assets/image/skill-logo/ai-google.png"
+     class="img-fluid"
+     style="width:48px; height:48px;"
+     alt="Google AI Studio">
+
+          <h6 class="mt-3 text-white">Google Ai Studio</h6>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="py-5" style="background:#020617;">
+  <div class="container">
+
+    <h2 class="text-center fw-bold mb-5 text-light">My Projects</h2>
+
+    <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Carousel Inner -->
+      <div class="carousel-inner">
+
+        <!-- SLIDE 1 -->
+        <div class="carousel-item active">
+          <div class="row g-4">
+
+            <!-- Project Card -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card project-card text-light border-0">
+                <img src="Assets/image/project-module/techstore.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5>E -Commerce Website</h5>
+                  <p>e commerce website using Bootstrap 5 and javascript.</p>
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="card project-card text-light border-0">
+                <img src="Assets/image/project-module/sr.official.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5>Login System</h5>
+                  <p>Authentication UI with validation.</p>
+                 
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="card project-card text-light border-0">
+                <img src="Assets/image/project-module/student-dashboad.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5>Dashboard UI</h5>
+                  <p>Admin panel UI design.</p>
+                 
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="carousel-item">
+          <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+              <div class="card project-card text-light border-0">
+                <img src="Assets/image/project-module/hemanta.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5>Portfolio</h5>
+                  <p>Portfolio using with bootstrap 5 .</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="card project-card text-light border-0">
+                <img src="Assets/image/project-module/ganasangbad.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5>Ganasangbad</h5>
+                  <p>News Website.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="card project-card text-light border-0">
+                <img src="Assets/image/project-module/forgott.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5>Log In Pannel</h5>
+                  <p>Student Log In Pannel using bootstrap 5 and javascript.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-5" style="background:#0f172a;">
+  <div class="container">
+
+    <h2 class="text-center fw-bold mb-5 text-light">Get in Touch</h2>
+
+    <div class="row g-4 align-items-stretch">
+
+      <!-- LEFT: CONTACT INFO -->
+      <div class="col-lg-5">
+        <div
+          class="h-100 p-4 rounded-4 shadow text-light"
+          style="
+            background: linear-gradient(135deg, #243858, #364466);
+            border: 1px solid rgba(255,255,255,0.08);
+          "
+        >
+
+          <h4 class="fw-bold mb-4">Contact Information</h4>
+
+          <div class="d-flex align-items-start mb-3">
+            <i class="bi bi-geo-alt-fill fs-4 text-primary me-3"></i>
+            <div>
+              <h6 class="mb-1">Address</h6>
+              <p class="mb-0">Guwahati, Assam, India</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-3">
+            <i class="bi bi-envelope-fill fs-4 text-primary me-3"></i>
+            <div>
+              <h6 class="mb-1">Email</h6>
+              <p class="mb-0">shankardas034171@example.com</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-3">
+            <i class="bi bi-telephone-fill fs-4 text-primary me-3"></i>
+            <div>
+              <h6 class="mb-1">Phone</h6>
+              <p class="mb-0">+91 7099264710</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start">
+            <i class="bi bi-globe fs-4 text-primary me-3"></i>
+            <div>
+              <h6 class="mb-1">Website</h6>
+              <p class="mb-0">www.yourportfolio.com</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT: CONTACT FORM -->
+      <div class="col-lg-7">
+        <form
+          class="p-4 rounded-4 shadow"
+          style="
+            background: linear-gradient(135deg, #243858, #364466);
+            border: 1px solid rgba(255,255,255,0.08);
+          "
+        >
+
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+
+          <div class="mb-3">
+            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+          </div>
+
+          <button class="btn btn-primary w-100">Send Message</button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer style="background:linear-gradient(135deg,#0d1117,#1b3968); color:#e3e9f4;">
+  <div class="container py-5">
+
+    <div class="row gy-4">
+
+      <!-- BRAND -->
+      <div class="col-md-4">
+        <h4 class="fw-bold text-white">Shankar Das</h4>
+        <p class="small text-light opacity-75">
+          Creative Web Designer crafting modern, responsive,
+          and user-friendly web experiences.
+        </p>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="col-md-4">
+        <h6 class="fw-semibold text-white mb-3">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-light text-decoration-none d-block mb-2">Home</a></li>
+          <li><a href="#about" class="text-light text-decoration-none d-block mb-2">About</a></li>
+          <li><a href="resume.html" class="text-light text-decoration-none d-block mb-2">Resume</a></li>
+          <li><a href="#project" class="text-light text-decoration-none d-block mb-2">Projects</a></li>
+          <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT & SOCIAL -->
+      <div class="col-md-4">
+        <h6 class="fw-semibold text-white mb-3">Connect With Me</h6>
+
+        <p class="small mb-2">
+          <i class="bi bi-envelope-fill"></i> shankardas034171@email.com
+        </p>
+        <p class="small mb-3">
+          <i class="bi bi-geo-alt-fill"></i> India
+        </p>
+
+        <div class="d-flex gap-3">
+          <a href="https://github.com/shankarcoder23" class="text-white fs-5"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/shankar-das-817b4b2b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BbhM3mfO3QGyyh4pWY2tHmw%3D%3D" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-light opacity-25 my-4">
+
+    <!-- COPYRIGHT -->
+    <div class="text-center small text-light opacity-75">
+      © 2025 <strong>Shankar Das</strong>. All Rights Reserved. <br>
+      <span class="opacity-75">Designed & Developed by Shankar Das</span>
+    </div>
+
+  </div>
+</footer>
+
+<script src="Assets/JS/portfolio.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
