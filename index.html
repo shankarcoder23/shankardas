@@ -22,9 +22,12 @@
 }
 
 .project-card img {
-  height: 260px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;          /* keeps original aspect ratio */
+  object-fit: contain;   /* shows full image, no crop */
+  background: #020617;   /* optional: fills empty space */
 }
+
 
 .project-card:hover {
   transform: translateY(-8px);
