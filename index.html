@@ -36,6 +36,8 @@
   filter: invert(1);
 }
 
+
+
   </style>
 </head>
 
@@ -305,108 +307,152 @@
 <!-- PROJECTS SECTION -->
 <section id="projects" class="py-5" style="background:#020617;">
   <div class="container">
-
     <h2 class="text-center fw-bold mb-5 text-light">My Projects</h2>
 
-    <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
-
-      <!-- Carousel Inner -->
+    <!-- DESKTOP CAROUSEL (3 cards per slide) -->
+    <div id="desktopCarousel" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
       <div class="carousel-inner">
-
-        <!-- SLIDE 1 -->
         <div class="carousel-item active">
           <div class="row g-4">
-
-            <!-- Project Card -->
-            <div class="col-lg-4 col-md-6">
-              <div class="card project-card text-light border-0">
-                <img src="Assets/image/project-module/techstore.png" class="card-img-top" alt="">
+            <div class="col-lg-4">
+              <div class="card project-card h-100 text-light border-0">
+                <img src="Assets/image/project-module/techstore.png" class="card-img-top">
                 <div class="card-body">
-                  <h5>E -Commerce Website</h5>
-                  <p>e commerce website using Bootstrap 5 and javascript.</p>
-                
+                  <h5>E-Commerce Website</h5>
+                  <p>Bootstrap 5 + JavaScript based UI.</p>
                 </div>
               </div>
             </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="card project-card text-light border-0">
-                <img src="Assets/image/project-module/sr.official.png" class="card-img-top" alt="">
+            <div class="col-lg-4">
+              <div class="card project-card h-100 text-light border-0">
+                <img src="Assets/image/project-module/sr.official.png" class="card-img-top">
                 <div class="card-body">
                   <h5>Login System</h5>
-                  <p>Authentication UI with validation.</p>
-                 
+                  <p>S.R Academy.</p>
                 </div>
               </div>
             </div>
-
-            <div class="col-lg-4 d-none d-lg-block">
-              <div class="card project-card text-light border-0">
-                <img src="Assets/image/project-module/student-dashboad.png" class="card-img-top" alt="">
+            <div class="col-lg-4">
+              <div class="card project-card h-100 text-light border-0">
+                <img src="Assets/image/project-module/student-dashboad.png" class="card-img-top">
                 <div class="card-body">
                   <h5>Dashboard UI</h5>
-                  <p>Admin panel UI design.</p>
-                 
+                  <p>S.R Academy</p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
-
-        <!-- SLIDE 2 -->
         <div class="carousel-item">
           <div class="row g-4">
-
-            <div class="col-lg-4 col-md-6">
-              <div class="card project-card text-light border-0">
-                <img src="Assets/image/project-module/hemanta.png" class="card-img-top" alt="">
+            <div class="col-lg-4">
+              <div class="card project-card h-100 text-light border-0">
+                <img src="Assets/image/project-module/hemanta.png" class="card-img-top">
                 <div class="card-body">
                   <h5>Portfolio</h5>
-                  <p>Portfolio using with bootstrap 5 .</p>
-                  
+                  <p>Hemanta Sarmah</p>
                 </div>
               </div>
             </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="card project-card text-light border-0">
-                <img src="Assets/image/project-module/ganasangbad.png" class="card-img-top" alt="">
+            <div class="col-lg-4">
+              <div class="card project-card h-100 text-light border-0">
+                <img src="Assets/image/project-module/ganasangbad.png" class="card-img-top">
                 <div class="card-body">
                   <h5>Ganasangbad</h5>
-                  <p>News Website.</p>
-                  
+                  <p>Online news website.</p>
                 </div>
               </div>
             </div>
-
-            <div class="col-lg-4 d-none d-lg-block">
-              <div class="card project-card text-light border-0">
-                <img src="Assets/image/project-module/forgott.png" class="card-img-top" alt="">
+            <div class="col-lg-4">
+              <div class="card project-card h-100 text-light border-0">
+                <img src="Assets/image/project-module/forgott.png" class="card-img-top">
                 <div class="card-body">
-                  <h5>Log In Pannel</h5>
-                  <p>Student Log In Pannel using bootstrap 5 and javascript.</p>
-                  
+                  <h5>Login Panel</h5>
+                  <p>S.R Academy</p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
-
       </div>
-
-      <!-- Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#desktopCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#desktopCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon"></span>
       </button>
-
     </div>
+
+    <!-- MOBILE CAROUSEL (1 card per slide) -->
+    <div id="mobileCarousel" class="carousel slide d-lg-none" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card project-card h-100 text-light border-0">
+            <img src="Assets/image/project-module/techstore.png" class="card-img-top">
+            <div class="card-body">
+              <h5>E-Commerce Website</h5>
+              <p>Bootstrap 5 + JavaScript based UI.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card project-card h-100 text-light border-0">
+            <img src="Assets/image/project-module/sr.official.png" class="card-img-top">
+            <div class="card-body">
+              <h5>Login System</h5>
+              <p>S.R Academy.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card project-card h-100 text-light border-0">
+            <img src="Assets/image/project-module/student-dashboad.png" class="card-img-top">
+            <div class="card-body">
+              <h5>Dashboard UI</h5>
+              <p>S.R Academy</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card project-card h-100 text-light border-0">
+            <img src="Assets/image/project-module/hemanta.png" class="card-img-top">
+            <div class="card-body">
+              <h5>Portfolio</h5>
+              <p>Hemanta Sarmah</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card project-card h-100 text-light border-0">
+            <img src="Assets/image/project-module/ganasangbad.png" class="card-img-top">
+            <div class="card-body">
+              <h5>Ganasangbad</h5>
+              <p>Online news website.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card project-card h-100 text-light border-0">
+            <img src="Assets/image/project-module/forgott.png" class="card-img-top">
+            <div class="card-body">
+              <h5>Login Panel</h5>
+              <p>S.R Academy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#mobileCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mobileCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
   </div>
 </section>
+
+
 
 
 
